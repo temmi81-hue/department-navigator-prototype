@@ -23,9 +23,9 @@
     {"id":"basic-material-research","name":"기초소재연구그룹","parent":"기술연구소","sites":["전사"],"categories":["환경","연구·IP"],"keywords":["연구","개발","환경소재","탄소소재","미래소재"],"responsibility":"내화물·환경소재·탄소소재 및 미래소재 개선개발을 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 기초소재연구그룹"},
     {"id":"cathode-development-1","name":"양극재개발1그룹","parent":"기술연구소","sites":["전사"],"categories":["연구·IP"],"keywords":["양극재","신제품","연구","개발","NCM"],"responsibility":"NCM계 양극재 중장기 기술계획과 양극재 신제품 개발 연구를 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 양극재개발1그룹"},
     {"id":"cathode-development-2","name":"양극재개발2그룹","parent":"기술연구소","sites":["전사"],"categories":["생산·조업","연구·IP"],"keywords":["양극재","공정","연구","개발"],"responsibility":"양극재 공정 개발과 중장기 기술개발 계획 수립을 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 양극재개발2그룹"},
-    {"id":"finance-planning","name":"재무기획그룹","parent":"기술연구소","sites":["전사"],"categories":["재무·회계"],"keywords":["재무","경영분석","경영이슈","운영회의"],"responsibility":"경영분석, 운영회의 주관, 경영 이슈 분석과 개선안 보고를 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 재무기획그룹"},
-    {"id":"accounting-tax","name":"회계세무그룹","parent":"기술연구소","sites":["전사"],"categories":["재무·회계"],"keywords":["회계","세무","회계제도","회계관리"],"responsibility":"회계제도 설정과 회계관리방침 입안을 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 회계세무그룹"},
-    {"id":"tax-section","name":"세무섹션","parent":"기술연구소","sites":["전사"],"categories":["재무·회계"],"keywords":["세무","법인세","신고","납부","세액공제"],"responsibility":"법인세 신고·납부, 세무조정과 세액공제·감면 검토를 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 세무섹션"},
-    {"id":"internal-accounting","name":"내부회계관리섹션","parent":"기술연구소","sites":["전사"],"categories":["재무·회계","컴플라이언스"],"keywords":["내부회계","회계","통제","감사"],"responsibility":"내부회계관리 제도와 회계 통제 관련 업무를 담당합니다.","sourcePath":"업무분장 > 기술연구소 > 내부회계관리섹션"}
+    {"id":"finance-planning","name":"재무기획그룹","parent":"경영기획실","sites":["전사"],"categories":["재무·회계"],"keywords":["재무","경영분석","경영이슈","운영회의"],"responsibility":"경영분석, 운영회의 주관, 경영 이슈 분석과 개선안 보고를 담당합니다.","sourcePath":"업무분장 > 기획지원본부 > 경영기획실 > 재무기획그룹"},
+    {"id":"accounting-tax","name":"회계세무그룹","parent":"경영기획실","sites":["전사"],"categories":["재무·회계"],"keywords":["회계","세무","회계제도","회계관리"],"responsibility":"회계제도 설정과 회계관리방침 입안을 담당합니다.","sourcePath":"업무분장 > 기획지원본부 > 경영기획실 > 회계세무그룹"},
+    {"id":"tax-section","name":"세무섹션","parent":"경영기획실","sites":["전사"],"categories":["재무·회계"],"keywords":["세무","법인세","신고","납부","세액공제"],"responsibility":"법인세 신고·납부, 세무조정과 세액공제·감면 검토를 담당합니다.","sourcePath":"업무분장 > 기획지원본부 > 경영기획실 > 세무섹션"},
+    {"id":"internal-accounting","name":"내부회계관리섹션","parent":"경영기획실","sites":["전사"],"categories":["재무·회계","컴플라이언스"],"keywords":["내부회계","회계","통제","감사"],"responsibility":"내부회계관리 제도와 회계 통제 관련 업무를 담당합니다.","sourcePath":"업무분장 > 기획지원본부 > 경영기획실 > 내부회계관리섹션"}
   ]
 }
