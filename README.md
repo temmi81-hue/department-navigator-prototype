@@ -1,67 +1,39 @@
-# 업무 지침 네비게이터 데모.
+# 부서 네비게이터 프로토타입
 
-`public/demo.html`은 `public/pilot_departments.json`의 검증된 35개 부서만 사용한다.
-업무 상황 검색, 주관·협업 후보, 협업 후보 선택, 추천 근거, 검토 요청 확인, 메일 초안 작성을 제공한다.
+업무 상황을 입력하면 협의가 필요한 부서 후보를 안내하는 파일 기반 데모입니다.
+데모 데이터는 `public/pilot_departments.json`에 포함되어 있어 별도의 데이터베이스나 외부 API 없이 실행할 수 있습니다.
 
-# 35개 부서
-1. 안전보건기획그룹
-2. 안전QSS섹션
-3. 환경자원기획그룹
-4. 정도경영그룹
-5. 투자관리그룹
-6. 원료구매1그룹
-7. 원료구매2그룹
-8. 설비자재구매그룹
-9. 기초소재품질섹션
-10. 포항안전환경그룹
-11. 광양안전환경그룹
-12. 플랜트공사그룹
-13. 플랜트안전섹션
-14. 포항양극재정비섹션
-15. 광양양극재정비섹션
-16. 윤리경영사무국
-17. 연구기획그룹
-18. 세종지원섹션
-19. 기초소재연구그룹
-20. 양극재개발1그룹
-21. 양극재개발2그룹
-22. 재무기획그룹
-23. 회계세무그룹
-24. 세무섹션
-25. 내부회계관리섹션
-26. 자금IR그룹
-27. 자금섹션
-28. 지속가능경영그룹
-29. 행정지원그룹
-30. 인사문화그룹
-31. 노사발전그룹
-32. 상생협력그룹
-33. 법무그룹
-34. IP전략센터
-35. 기초소재기획그룹
+## 요구 사항
 
+- Node.js 22.13.0 이상
+- pnpm 10.15.0 이상
 
-## 다른 PC에서 실행
+Node.js 버전은 `.node-version`에, 패키지 매니저 버전은 `package.json`의 `packageManager`에 고정되어 있습니다.
 
-1. Node.js LTS를 설치한다.
-2. 프로젝트 폴더에서 아래 명령을 실행한다.
+## 다른 컴퓨터에서 실행하기
 
-```powershell
+레포지토리를 클론한 뒤 프로젝트 폴더에서 실행합니다.
+
+```bash
 corepack enable
+corepack prepare pnpm@10.15.0 --activate
 pnpm install --frozen-lockfile
 pnpm run dev -- --host 127.0.0.1 --port 3000
 ```
 
-3. 브라우저에서 `http://localhost:3000/demo.html`을 연다.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 엽니다.
 
-`demo.html`은 JSON을 읽으므로 파일 탐색기에서 직접 열지 말고, 반드시 위 로컬 서버로 실행한다.
+Windows PowerShell에서도 동일한 명령을 사용할 수 있습니다. `corepack` 명령을 찾을 수 없다면 Node.js를 공식 LTS 설치 파일로 다시 설치한 뒤 실행하세요.
 
-## GitHub에 포함할 파일
+## 검증 명령
 
-- `public/demo.html`
-- `public/pilot_departments.json`
-- `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`
-- 설정 및 앱 소스 파일
-- `.gitignore`, 이 README
+```bash
+pnpm run lint
+pnpm run build
+```
 
-`node_modules`, `.next`, `dist`, `.vinext`, `.wrangler` 및 원본 업무분장 문서는 포함하지 않는다.
+## Git에 포함되지 않는 파일
+
+`node_modules`, `.next`, `dist`, `.vinext`, `.wrangler` 같은 생성물과 `.env*` 환경설정 파일은 `.gitignore`로 제외합니다. 가상환경을 저장할 필요가 없는 Node.js 프로젝트이며, `pnpm-lock.yaml`을 커밋하므로 `pnpm install --frozen-lockfile`로 동일한 의존성을 재설치할 수 있습니다.
+
+환경변수가 필요한 경우 `.env.example`을 참고해 로컬에서 `.env.local`을 만들고 값을 입력하세요. `.env.local`은 절대 커밋하지 않습니다.
