@@ -1,0 +1,626 @@
+{
+  "source": "260901_demo_guidelines_35.docx",
+  "guidelines": [
+    {
+      "id": "DEMO-GUIDE-01",
+      "title": "1. 안전보건기획그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-01  |  주관 부서: 안전보건기획그룹",
+      "relatedDepartments": [
+        "협업 부서: 환경자원기획그룹",
+        "법무그룹"
+      ],
+      "keywords": [
+        "키워드: 안전보건기획",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-02",
+      "title": "2. 안전QSS섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-02  |  주관 부서: 안전QSS섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "환경자원기획그룹",
+        "법무그룹"
+      ],
+      "keywords": [
+        "키워드: 안전QSS",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-03",
+      "title": "3. 환경자원기획그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-03  |  주관 부서: 환경자원기획그룹",
+      "relatedDepartments": [
+        "협업 부서: 포항안전환경그룹",
+        "광양안전환경그룹"
+      ],
+      "keywords": [
+        "키워드: 환경자원기획",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-04",
+      "title": "4. 정도경영그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-04  |  주관 부서: 정도경영그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 정도경영",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-05",
+      "title": "5. 투자관리그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-05  |  주관 부서: 투자관리그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 투자관리",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-06",
+      "title": "6. 원료구매1그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-06  |  주관 부서: 원료구매1그룹",
+      "relatedDepartments": [
+        "협업 부서: 원료구매2그룹",
+        "설비자재구매그룹"
+      ],
+      "keywords": [
+        "키워드: 원료구매1",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-07",
+      "title": "7. 원료구매2그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-07  |  주관 부서: 원료구매2그룹",
+      "relatedDepartments": [
+        "협업 부서: 원료구매1그룹",
+        "설비자재구매그룹"
+      ],
+      "keywords": [
+        "키워드: 원료구매2",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-08",
+      "title": "8. 설비자재구매그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-08  |  주관 부서: 설비자재구매그룹",
+      "relatedDepartments": [
+        "협업 부서: 원료구매1그룹",
+        "원료구매2그룹"
+      ],
+      "keywords": [
+        "키워드: 설비자재구매",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-09",
+      "title": "9. 기초소재품질섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-09  |  주관 부서: 기초소재품질섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 기초소재품질",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-10",
+      "title": "10. 포항안전환경그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-10  |  주관 부서: 포항안전환경그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "환경자원기획그룹",
+        "법무그룹"
+      ],
+      "keywords": [
+        "키워드: 포항안전환경",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-11",
+      "title": "11. 광양안전환경그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-11  |  주관 부서: 광양안전환경그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "환경자원기획그룹",
+        "법무그룹"
+      ],
+      "keywords": [
+        "키워드: 광양안전환경",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-12",
+      "title": "12. 플랜트공사그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-12  |  주관 부서: 플랜트공사그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 플랜트공사",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-13",
+      "title": "13. 플랜트안전섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-13  |  주관 부서: 플랜트안전섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "환경자원기획그룹",
+        "법무그룹"
+      ],
+      "keywords": [
+        "키워드: 플랜트안전",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-14",
+      "title": "14. 포항양극재정비섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-14  |  주관 부서: 포항양극재정비섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 포항양극재정비",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-15",
+      "title": "15. 광양양극재정비섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-15  |  주관 부서: 광양양극재정비섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 광양양극재정비",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-16",
+      "title": "16. 윤리경영사무국 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-16  |  주관 부서: 윤리경영사무국",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 윤리경영사무국",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-17",
+      "title": "17. 연구기획그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-17  |  주관 부서: 연구기획그룹",
+      "relatedDepartments": [
+        "협업 부서: 기초소재연구그룹",
+        "양극재개발1그룹"
+      ],
+      "keywords": [
+        "키워드: 연구기획",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-18",
+      "title": "18. 세종지원섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-18  |  주관 부서: 세종지원섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 세종지원",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-19",
+      "title": "19. 기초소재연구그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-19  |  주관 부서: 기초소재연구그룹",
+      "relatedDepartments": [
+        "협업 부서: 연구기획그룹",
+        "양극재개발1그룹"
+      ],
+      "keywords": [
+        "키워드: 기초소재연구",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-20",
+      "title": "20. 양극재개발1그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-20  |  주관 부서: 양극재개발1그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 양극재개발1",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-21",
+      "title": "21. 양극재개발2그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-21  |  주관 부서: 양극재개발2그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 양극재개발2",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-22",
+      "title": "22. 재무기획그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-22  |  주관 부서: 재무기획그룹",
+      "relatedDepartments": [
+        "협업 부서: 회계세무그룹",
+        "자금섹션"
+      ],
+      "keywords": [
+        "키워드: 재무기획",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-23",
+      "title": "23. 회계세무그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-23  |  주관 부서: 회계세무그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 회계세무",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-24",
+      "title": "24. 세무섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-24  |  주관 부서: 세무섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 세무",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-25",
+      "title": "25. 내부회계관리섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-25  |  주관 부서: 내부회계관리섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 내부회계관리",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-26",
+      "title": "26. 자금IR그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-26  |  주관 부서: 자금IR그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 자금IR",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-27",
+      "title": "27. 자금섹션 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-27  |  주관 부서: 자금섹션",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 자금",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-28",
+      "title": "28. 지속가능경영그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-28  |  주관 부서: 지속가능경영그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 지속가능경영",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-29",
+      "title": "29. 행정지원그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-29  |  주관 부서: 행정지원그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 행정지원",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-30",
+      "title": "30. 인사문화그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-30  |  주관 부서: 인사문화그룹",
+      "relatedDepartments": [
+        "협업 부서: 노사발전그룹",
+        "행정지원그룹"
+      ],
+      "keywords": [
+        "키워드: 인사문화",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-31",
+      "title": "31. 노사발전그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-31  |  주관 부서: 노사발전그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 노사발전",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-32",
+      "title": "32. 상생협력그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-32  |  주관 부서: 상생협력그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 상생협력",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-33",
+      "title": "33. 법무그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-33  |  주관 부서: 법무그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 법무",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-34",
+      "title": "34. IP전략센터 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-34  |  주관 부서: IP전략센터",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: IP전략",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    },
+    {
+      "id": "DEMO-GUIDE-35",
+      "title": "35. 기초소재기획그룹 업무 검토 및 유관부서 연계 가이드(시연용)",
+      "owner": "문서번호: DEMO-GUIDE-35  |  주관 부서: 기초소재기획그룹",
+      "relatedDepartments": [
+        "협업 부서: 안전보건기획그룹",
+        "안전QSS섹션",
+        "환경자원기획그룹"
+      ],
+      "keywords": [
+        "키워드: 기초소재기획",
+        "업무분장",
+        "검토요청",
+        "유관부서"
+      ],
+      "articles": [],
+      "source": "/260901_demo_guidelines_35.docx"
+    }
+  ]
+}
