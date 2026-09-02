@@ -7,7 +7,7 @@ type Match = Department & { score: number; reasons: string[] };
 type Workflow = { id: string; title: string; keywords: string[]; threshold: string; steps: { order: number; title: string; owner: string; detail: string; evidence: string }[]; note: string };
 
 const sites = ['미선택', '포항', '광양', '세종', '전사'];
-const categories = ['자동 분류', '안전', '환경', '설비·정비', '구매·자재', '투자·공사', '생산·조업', '품질', '컴플라이언스'];
+const categories = ['자동 분류', '안전', '환경', '설비·정비', '구매·자재', '투자·공사', '생산·조업', '품질', '재무·회계', '컴플라이언스'];
 const examples = [
   ['포항 설비 교체', '포항 공장의 설비를 교체하려는데 먼저 협의할 부서를 알고 싶어요.', '포항'],
   ['신규 원료 구매', '신규 원료 구매 전에 품질과 환경 측면에서 확인할 부서를 찾아주세요.', '미선택'],
@@ -24,6 +24,9 @@ function rank(question: string, site: string, category: string, departments: Dep
     else if (matchedCategories.length) { score += 6; reasons.push(`${matchedCategories[0]} 업무유형 일치`); }
     if (site !== '미선택' && (department.sites.includes(site) || department.sites.includes('전사'))) { score += department.sites.includes(site) ? 5 : 2; reasons.push(department.sites.includes(site) ? `${site} 사업장 담당` : '전사 담당 조직'); }
     if (matchedKeywords.length) { score += Math.min(matchedKeywords.length * 2, 6); reasons.push(`${matchedKeywords.slice(0, 3).join('·')} 키워드 일치`); }
+    if (department.id === 'investment' && /(투자|승인|5억|5억원|타당성|심의|투자비)/.test(text)) { score += 10; reasons.push('투자 승인·심의 의도 일치'); }
+    if (department.id === 'accounting-tax' && /(회계|회계처리|비용|자산|감가상각|전표)/.test(text)) { score += 7; reasons.push('회계처리 의도 일치'); }
+    if (department.id === 'equipment-material' && /(구매|설비|발주|계약)/.test(text)) { score += 4; reasons.push('설비 구매·계약 의도 일치'); }
     return { ...department, score, reasons };
   }).filter((item) => item.score > 0).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
 }
