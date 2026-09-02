@@ -28,7 +28,7 @@ function rank(question: string, site: string, category: string, departments: Dep
     if (department.id === 'accounting-tax' && /(회계|회계처리|비용|자산|감가상각|전표)/.test(text)) { score += 7; reasons.push('회계처리 의도 일치'); }
     if (department.id === 'equipment-material' && /(구매|설비|발주|계약)/.test(text)) { score += 4; reasons.push('설비 구매·계약 의도 일치'); }
     return { ...department, score, reasons };
-  }).filter((item) => item.score > 0).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
+  }).filter((item) => item.score > 0).sort((a, b) => { const investmentIntent = /(투자|승인|5억|5억원|타당성|심의|투자비)/.test(text); if (investmentIntent && a.id === 'investment' && b.id !== 'investment') return -1; if (investmentIntent && b.id === 'investment' && a.id !== 'investment') return 1; return b.score - a.score || a.name.localeCompare(b.name, 'ko'); });
 }
 
 function level(score: number): [string, string] { return score >= 11 ? ['높음', 'high'] : score >= 6 ? ['보통', 'medium'] : ['추가 확인 필요', 'low']; }
