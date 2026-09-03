@@ -14,8 +14,13 @@ const examples = [
   ['투자·공사 사전 협의', '공장 증설 공사를 준비하는데 투자와 안전 측면에서 협의가 필요합니다.', '광양'],
 ] as const;
 
-function rank(question: string, site: string, category: string, departments: Department[]): Match[] {
+function rank(question: string, site: string, category: string, departments: Department[], workflows: Workflow[]): Match[] {
   const text = question.toLowerCase();
+  const workflow = workflows.find((item) => item.keywords.filter((keyword) => text.includes(keyword.toLowerCase())).length >= 2);
+  const workflowOrder = new Map<string, number>();
+  workflow?.steps.forEach((step) => {
+    if (!workflowOrder.has(step.owner)) workflowOrder.set(step.owner, step.order);
+  });
   return departments.map((department) => {
     let score = 0; const reasons: string[] = [];
     const matchedCategories = department.categories.filter((item) => text.includes(item.toLowerCase()));
@@ -28,7 +33,12 @@ function rank(question: string, site: string, category: string, departments: Dep
     if (department.id === 'accounting-tax' && /(회계|회계처리|비용|자산|감가상각|전표)/.test(text)) { score += 7; reasons.push('회계처리 의도 일치'); }
     if (department.id === 'equipment-material' && /(구매|설비|발주|계약)/.test(text)) { score += 4; reasons.push('설비 구매·계약 의도 일치'); }
     return { ...department, score, reasons };
-  }).filter((item) => item.score > 0).sort((a, b) => { const investmentIntent = /(투자|승인|5억|5억원|타당성|심의|투자비)/.test(text); if (investmentIntent && a.id === 'investment' && b.id !== 'investment') return -1; if (investmentIntent && b.id === 'investment' && a.id !== 'investment') return 1; return b.score - a.score || a.name.localeCompare(b.name, 'ko'); });
+  }).filter((item) => item.score > 0).sort((a, b) => {
+    const aOrder = workflowOrder.get(a.name) ?? Number.MAX_SAFE_INTEGER;
+    const bOrder = workflowOrder.get(b.name) ?? Number.MAX_SAFE_INTEGER;
+    if (aOrder !== bOrder) return aOrder - bOrder;
+    return b.score - a.score || a.name.localeCompare(b.name, 'ko');
+  });
 }
 
 function level(score: number): [string, string] { return score >= 11 ? ['높음', 'high'] : score >= 6 ? ['보통', 'medium'] : ['추가 확인 필요', 'low']; }
@@ -36,7 +46,7 @@ function level(score: number): [string, string] { return score >= 11 ? ['높음'
 export default function Home() {
   const [departments, setDepartments] = useState<Department[]>([]); const [workflows, setWorkflows] = useState<Workflow[]>([]); const [question, setQuestion] = useState(''); const [site, setSite] = useState('미선택'); const [category, setCategory] = useState('자동 분류'); const [searched, setSearched] = useState(false); const [error, setError] = useState(''); const [draft, setDraft] = useState(''); const [copied, setCopied] = useState(false); const [pendingDepartment, setPendingDepartment] = useState<Match | null>(null); const [requestClosed, setRequestClosed] = useState(false); const [requestStatus, setRequestStatus] = useState<'작성중' | '검토 대기' | '검토중' | '회신 완료'>('작성중');
   useEffect(() => { Promise.all([fetch('/pilot_departments.json').then((r) => r.json()), fetch('/instruction_workflows.json').then((r) => r.json())]).then(([departmentData, workflowData]) => { setDepartments(departmentData.organizations); setWorkflows(workflowData.workflows); }).catch(() => setError('데모 데이터를 불러오지 못했습니다.')); }, []);
-  const results = useMemo(() => rank(question, site, category, departments), [question, site, category, departments]); const primary = results[0];
+  const results = useMemo(() => rank(question, site, category, departments, workflows), [question, site, category, departments, workflows]); const primary = results[0];
   const workflow = useMemo(() => workflows.find((item) => item.keywords.filter((keyword) => question.toLowerCase().includes(keyword.toLowerCase())).length >= 2), [question, workflows]);
   function submit(event: FormEvent) { event.preventDefault(); setDraft(''); if (!question.trim()) { setError('업무 상황을 입력해 주세요.'); return; } setError(''); setSearched(true); }
   function selectExample(example: typeof examples[number]) { setQuestion(example[1]); setSite(example[2]); setCategory('자동 분류'); setError(''); setDraft(''); setSearched(true); }
